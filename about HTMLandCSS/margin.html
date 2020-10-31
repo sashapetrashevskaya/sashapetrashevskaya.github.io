@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Поля и отступы</title>
+	<style>
+		img {
+			width: 100%
+		}
+		#test1 {
+			width: 500px;
+			height: 200px;
+			background: greenyellow;
+			/*Внешний отступ*/
+			margin-top: 100px;
+			margin-bottom: 100px;
+			border: 5px solid lime;
+			/*Внутренний отступ*/
+			padding-left: 10px;
+			padding-top: 30px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<a href="display.html"><img id="left" src="https://pngimage.net/wp-content/uploads/2018/06/%D1%81%D1%82%D1%80%D0%B5%D0%BB%D0%BA%D0%B0-%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80-png-1.png" alt="Левая стрелка"></a>
+		<h1>Поля и отступы</h1>
+		<a href="border.html"><img id="right" src="https://pngimage.net/wp-content/uploads/2018/06/%D1%81%D1%82%D1%80%D0%B5%D0%BB%D0%BA%D0%B0-%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80-png-1.png" alt="Правая стрелка"></a>
+	</header>
+	<main>
+		<img id="pic1" src="http://html-plus.in.ua/wp-content/uploads/2017/04/box-model.jpg" alt="отступы">
+		<div id="test1">Harry Potter</div>
+
+		<h2>Сокращенная запись margin и  padding</h2>
+		<ul>
+			<li><b>4 значения:</b>задаются отступы для всехсторон в таком порядке:сверху,справа,снизу,слева <i>Пример:</i>padding:3px 5px 2px 7px</li>
+			<li><b>3 значения:</b>задается размер сначала для верхней стороны,потом одновременно для левой и правой,а затем - для нижней. <i>Пример:</i>margin: 10pxauto 5px;</li>
+			<li><b>2 значения:</b>задаются сначала отступы одновременно для верхней и нижней стороны,а потом - одновременно для левой и правой. <i>Пример:</i>padding:10px 20px;</li>
+			<li>1 значение:<b>задаются одинаковые отступы для всех сторон. <i>Пример:</i>margin:100px;</b></li>
+		</ul>
+	</main>
+</body>
+<style>
+	body {
+		background: crimson;
+	}
+	header {
+		background: indianred;
+	}
+	#pic1{
+		width: 750px;
+		height: 650px;
+	}
+</style>
+</html>
