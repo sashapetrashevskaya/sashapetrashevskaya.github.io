@@ -3,7 +3,58 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>position.html</title>
+	<link rel="stylesheet" href="style.css">
+	<title>Свойство position</title>
+	<style>
+		#container {
+			width: 80%;
+			margin: auto;
+		}
+		#header,#footer {
+			width: 100%;
+			background-color:mediumorchid;
+			color:white;
+		}
+		#content {
+			width: 100%;
+			background-color: deeppink;
+		}
+		#div1 {
+			margin: 0 25px;
+			height: 30px;
+			background: lightsteelblue;
+			position: static;
+		}
+		#div2 {
+			margin: 0 25px;
+			height: 35px;
+			background: powderblue;
+			/*Относительно обычного расположения*/
+			position: relative;
+			/*left.right.top.bottom*/
+			left: 100px;
+			/*top: 50px;*/
+		}
+		#div3 {
+			margin: 0 25px;
+			height: 40px;
+			background: lightblue;
+			/*абсолютное позиционирования*/
+			position: absolute;
+			left: 100px;
+			right: 20px;
+		}
+		#div4 {
+			margin: 0 25px;
+			height: 45px;
+			background: skyblue;
+		}
+		#div5 {
+			margin: 0 25px;
+			height: 50px;
+			background:royalblue;
+		}
+	</style>
 </head>
 <body>
 	<header>
@@ -12,7 +63,37 @@
 		<a href="index.html"><img id="right" src="https://pngimage.net/wp-content/uploads/2018/06/%D1%81%D1%82%D1%80%D0%B5%D0%BB%D0%BA%D0%B0-%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80-png-1.png" alt="Правая стрелка"></a>
 	</header>
 	<main>
-		
+		<div id="container">
+			<div id="header">id="header"</div>
+			<div id="content">id="content"
+				<div id="div1">id="div1"</div>
+				<div id="div2">id="div2"</div>
+				<div id="div3">id="div3"</div>
+				<div id="div4">id="div4"</div>
+				<div id="div5">id="div5"</div>
+			</div>
+			<div id="footer">id="footer"</div>
+		</div>
+
+		<h1>Итого:</h1>
+		<h2>static</h2>
+		<p>иначе называется "без розиционнирования"</p>
+		<h2>relative</h2>
+		<p>сдвигает элемент относительно текущего места</p>
+		<ol>
+			<li>противоположеные границы left/right(top/ottom)одновременно указать нельзя.</li>
+			<li>Окружающие элементы ведут себя так,будто элемент никуда не сдвигался.</li>
+		</ol>
+
+		<h2>absolute</h2>
+		<p>Визуально переносит элемент на новое место. <br> Новое место вычисляется по координатам left/right,top/bottom относительно ближайшего позиционированого родителя. Если такого родителя нет,то им считается окно.</p>
+		<ol>
+			<li>Ширина элемента по умолчанию устанавливается по содержимому.</li>
+			<li>Можно указать одновременно противоположные границы left/right (top/bottom).Элемент при этом растянется.</li>
+			<li>Окружающие элементы заполняют освободившееся место.</li>
+		</ol>
+		<h2>fixed</h2>
+		<p>Повод абсолютного позиционирования,при котором элемент призываться к координатам окна,а не документа. При прокруте остается на том же месте.</p>
 	</main>
 </body>
 </html>
