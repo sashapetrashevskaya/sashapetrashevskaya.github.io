@@ -1,0 +1,18 @@
+html {
+	/*размер шрифта*/
+	font-size: 10px;
+   /*шрифты*/
+	font-family: 'Noto Serif', serif;
+}
+.logo {
+	font-size:3.2rem;
+	/*толщина шрифтта*/
+	font-weight: bold;
+	width: 200px;
+
+}
+
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+}
